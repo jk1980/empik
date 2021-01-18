@@ -6,6 +6,7 @@ import com.empik.jagee.domain.queries.results.IQueryResult;
 import com.empik.jagee.domain.queries.UserQuery;
 import com.empik.jagee.domain.queries.results.UserQueryResult;
 import com.empik.jagee.github.GitHubUserClient;
+import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import lombok.val;
 import org.apache.logging.log4j.util.Strings;
@@ -19,6 +20,7 @@ import java.math.BigDecimal;
 public class UserQueryProcessor implements IProcessor {
 
     @Autowired
+    @Setter
     private GitHubUserClient gitHubUserClient;
 
     @Override
